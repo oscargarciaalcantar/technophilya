@@ -113,7 +113,7 @@ class PostController extends Controller
         //Mensaje flash de cambio
         Session::flash('success', 'Esta publicación ha sido actualizada con éxito');
 
-        //Redirigir con un flash mensaje a la pagina post.show
+        //Redirigir con un flash mensaje a la pagina post.show que nos muestra el cambio realizado
         return redirect()->route('posts.show', $post->id);
 
     }
